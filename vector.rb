@@ -11,4 +11,16 @@ class Vector
   def length
     Math.sqrt(@x**2 + @y**2)
   end
+  
+  def get_x
+    @x
+  end 
+  
+  def get_y
+    @y
+  end
+  
+  def add(v2)
+    Vector.new(@x+v2.get_x, @y+v2.get_y)
+  end
 end
